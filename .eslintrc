@@ -1,0 +1,29 @@
+{
+  "extends": "airbnb",
+  "plugins": [
+    "babel",
+    "react"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "modules": true,
+      "jsx": true,
+      "spread": true
+    }
+  },
+  "rules": {
+    "max-len": ["warn", {
+      "ignoreComments": true,
+      "ignoreStrings": true,
+      "tabWidth": 2,
+      "code": 100
+    }]
+  }
+}
