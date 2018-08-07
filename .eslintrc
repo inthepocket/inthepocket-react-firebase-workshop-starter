@@ -1,7 +1,6 @@
 {
   "extends": "airbnb",
   "plugins": [
-    "babel",
     "react"
   ],
   "env": {

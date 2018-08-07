@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 
-import logo from './assets/logo.svg';
+/* Data & logic */
 import { initFirebase, listenToFirebaseRef, postToFirebaseRef, deleteInFirebaseRef } from './service/firebase';
-import './App.css';
 import generateUniqueId from './utils/uuid';
+
+/* Components & UI */
+import './App.css';
+import logo from './assets/logo.svg';
+import Header from './components/Header';
 
 class App extends Component {
   constructor(props) {
@@ -63,10 +67,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">☀️ ITP Summer Academy — React + Firebase</h1>
-        </header>
+        <Header logo={logo} title="☀️ ITP Summer Academy — React + Firebase" />
         <div className="App-intro">
           {this.state.loading
             ? <p>🤔 Getting votes from firebase…</p>
