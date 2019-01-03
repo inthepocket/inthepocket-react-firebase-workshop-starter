@@ -44,3 +44,7 @@ npm i -D eslint-plugin-react-hooks@next
 - https://reactjs.org/docs/hooks-custom.html
 - https://reactjs.org/docs/hooks-reference.html
 - https://reactjs.org/docs/hooks-faq.html
+
+## Good places to start
+
+- You could wrap the [service functions](../src/service/firebase.js) which look at Firebase in a custom effect. e.g getFromFirebaseRef could be wrapped in an effect useFirebaseRef
