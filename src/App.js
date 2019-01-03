@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
 /* Data & logic */
-import { initFirebase, listenToFirebaseRef, postToFirebaseRef, deleteInFirebaseRef } from './service/firebase';
+import {
+  initFirebase, listenToFirebaseRef, postToFirebaseRef, deleteInFirebaseRef,
+} from './service/firebase';
 import generateUniqueId from './utils/uuid';
 
 /* Components & UI */
@@ -67,13 +69,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header logo={logo} title="☀️ ITP Summer Academy — React + Firebase" />
+        <Header logo={logo} title="⚛️ 👖 In The Pocket: React + Firebase workshop starter" />
         <div className="App-intro">
           {this.state.loading
-            ? <p>🤔 Getting votes from firebase…</p>
-            : <p>There are {this.totalVotes} votes!</p>
+            ? (
+              <p>
+                <span role="img" aria-label="Thinking">🤔 </span>
+                Getting votes from firebase…
+              </p>
+            )
+            : (
+              <p>{`There are ${this.totalVotes} votes!`}</p>
+            )
           }
-          <button onClick={this.onHandleVote}>
+          <button onClick={this.onHandleVote} type="button">
             {this.hasVoted ? '🙅‍♀️ Unvote' : '✍️ Vote'}
           </button>
         </div>

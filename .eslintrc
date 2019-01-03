@@ -23,6 +23,8 @@
       "ignoreStrings": true,
       "tabWidth": 2,
       "code": 100
-    }]
+    }],
+    "react/jsx-filename-extension": "off",
+    "react/destructuring-assignment": "off"
   }
 }
