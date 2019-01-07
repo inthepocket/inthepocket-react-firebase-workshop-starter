@@ -1,21 +1,20 @@
-{
-  "extends": "airbnb",
-  "plugins": [
-    "react"
-  ],
+module.exports = {
   "env": {
+    "browser": true,
     "es6": true,
-    "browser": true
   },
-  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+  ],
+  "globals": {
+    "graphql": false,
+  },
   "parserOptions": {
     "sourceType": "module",
-    "ecmaVersion": 6,
     "ecmaFeatures": {
-      "modules": true,
+      "experimentalObjectRestSpread": true,
       "jsx": true,
-      "spread": true
-    }
+    },
   },
   "rules": {
     "max-len": ["warn", {
