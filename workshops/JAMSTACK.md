@@ -10,6 +10,9 @@ The purpose of this workshop is to get started with the JAMstack by using Gatsby
 ```console
 $ git fetch origin
 $ git checkout feature/jamstack-starter
+
+# If you have a lot of unstaged files, reset local to remote:
+$ git reset --hard origin/feature/jamstack-starter
 ```
 
 3. Run `npm install` to get all required dependencies
