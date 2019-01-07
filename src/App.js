@@ -10,6 +10,7 @@ import generateUniqueId from './utils/uuid';
 import './App.css';
 import logo from './assets/logo.svg';
 import Header from './components/Header';
+import SafeEmoji from './components/SafeEmoji';
 
 class App extends Component {
   constructor(props) {
@@ -74,7 +75,7 @@ class App extends Component {
           {this.state.loading
             ? (
               <p>
-                <span role="img" aria-label="Thinking">🤔 </span>
+                <SafeEmoji emoji="🤔 " label="Thinking" />
                 Getting votes from firebase…
               </p>
             )
