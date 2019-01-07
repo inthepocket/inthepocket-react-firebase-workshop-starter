@@ -25,6 +25,7 @@
       "code": 100
     }],
     "react/jsx-filename-extension": "off",
-    "react/destructuring-assignment": "off"
+    "react/destructuring-assignment": "off",
+    "react/prop-types": "off"
   }
 }
