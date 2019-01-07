@@ -11,6 +11,7 @@ import './App.css';
 import logo from './assets/logo.svg';
 import Header from './components/Header';
 import SafeEmoji from './components/SafeEmoji';
+import Clock from './components/Clock';
 
 class App extends Component {
   constructor(props) {
@@ -72,6 +73,7 @@ class App extends Component {
       <div className="App">
         <Header logo={logo} title="⚛️ 👖 In The Pocket: React + Firebase workshop starter" />
         <div className="App-intro">
+          <Clock />
           {this.state.loading
             ? (
               <p>

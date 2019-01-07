@@ -47,4 +47,4 @@ npm i -D eslint-plugin-react-hooks@next
 
 ## Good places to start
 
-- You could wrap the [service functions](../src/service/firebase.js) which look at Firebase in a custom effect. e.g getFromFirebaseRef could be wrapped in an effect useFirebaseRef
+- Take a look at the state and lifecycle hooks in the [Clock component](../src/components/Clock.js) and see how you can transform these to use hooks
