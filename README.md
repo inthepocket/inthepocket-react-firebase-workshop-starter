@@ -5,4 +5,4 @@
 ## Workshops
 
 - [Hooks](./workshops/HOOKS.md)
-- [JAMstack](./workshops/JAMSTACK.md)
+- [JAMstack](https://github.com/inthepocket/inthepocket-react-firebase-workshop-starter/blob/feature/jamstack-starter/workshops/JAMSTACK.md)
