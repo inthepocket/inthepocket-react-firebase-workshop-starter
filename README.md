@@ -5,3 +5,4 @@
 ## Workshops
 
 - [Hooks](./workshops/HOOKS.md)
+- [JAMstack](./workshops/JAMSTACK.md)
