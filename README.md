@@ -6,3 +6,4 @@
 
 - [Hooks](./workshops/HOOKS.md)
 - [JAMstack](https://github.com/inthepocket/inthepocket-react-firebase-workshop-starter/blob/feature/jamstack-starter/workshops/JAMSTACK.md)
+- [Firebase votes](./workshops/FIREBASE-VOTES.md)
